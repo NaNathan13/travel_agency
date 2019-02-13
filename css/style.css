@@ -1,0 +1,135 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.7;
+}
+
+nav.black {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li  {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+    opacity: 10;
+}
+
+nav.black ul li a {
+    color: #fff;
+}
+
+nav ul li a:focus {
+    outline: none;
+}
+
+
+
+  /* Landing */
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('../img/pic1.jpg');
+    min-height:100%;
+    z-index: -1;
+  }
+  
+  .pimg2{
+    background-image:url('../img/pic2.jpg');
+    min-height:900px;
+  }
+  
+  .pimg3{
+    background-image:url('../img/pic3.jpg');
+    min-height:900px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+  
